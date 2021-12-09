@@ -1,0 +1,88 @@
+2021-12-06 19:37:08,120 ERROR: Exception on / [GET] [in /Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/seleenadesai/Documents/Python/microblog/app/main/routes.py", line 45, in index
+    return render_template('index.html', title=_('Home'), form=form,
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/seleenadesai/Documents/Python/microblog/app/templates/index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/Users/seleenadesai/Documents/Python/microblog/app/templates/base.html", line 2, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block 'html'
+    {% block body -%}
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 21, in block 'body'
+    {% block navbar %}
+  File "/Users/seleenadesai/Documents/Python/microblog/app/templates/base.html", line 18, in block 'navbar'
+    <a class="navbar-brand" href="{{ url_for('index') }}">Microblog</a>
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2314, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'index'. Did you mean 'main.index' instead?
+2021-12-07 12:00:59,065 INFO: Microblog startup [in /Users/seleenadesai/Documents/Python/microblog/app/__init__.py:74]
+2021-12-07 12:01:05,495 ERROR: Exception on / [GET] [in /Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/seleenadesai/Documents/Python/microblog/app/main/routes.py", line 45, in index
+    return render_template('index.html', title=_('Home'), form=form,
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/seleenadesai/Documents/Python/microblog/app/templates/index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/Users/seleenadesai/Documents/Python/microblog/app/templates/base.html", line 2, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block 'html'
+    {% block body -%}
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 21, in block 'body'
+    {% block navbar %}
+  File "/Users/seleenadesai/Documents/Python/microblog/app/templates/base.html", line 18, in block 'navbar'
+    <a class="navbar-brand" href="{{ url_for('index') }}">Microblog</a>
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2314, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'index'. Did you mean 'main.index' instead?
+2021-12-07 12:14:49,339 INFO: Microblog startup [in /Users/seleenadesai/Documents/Python/microblog/app/__init__.py:74]

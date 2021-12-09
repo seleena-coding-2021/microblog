@@ -1,0 +1,116 @@
+2021-11-27 14:39:17,370 INFO: Microblog startup [in /Users/seleenadesai/Documents/Python/microblog/app/__init__.py:43]
+2021-11-27 14:49:22,991 INFO: Microblog startup [in /Users/seleenadesai/Documents/Python/microblog/app/__init__.py:43]
+2021-11-27 14:49:33,199 INFO: Microblog startup [in /Users/seleenadesai/Documents/Python/microblog/app/__init__.py:43]
+2021-11-27 14:55:21,169 INFO: Microblog startup [in /Users/seleenadesai/Documents/Python/microblog/app/__init__.py:43]
+2021-11-27 14:59:55,952 INFO: Microblog startup [in /Users/seleenadesai/Documents/Python/microblog/app/__init__.py:43]
+2021-11-27 15:06:44,750 INFO: Microblog startup [in /Users/seleenadesai/Documents/Python/microblog/app/__init__.py:43]
+2021-11-28 10:18:00,443 INFO: Microblog startup [in /Users/seleenadesai/Documents/Python/microblog/app/__init__.py:43]
+2021-11-28 10:18:05,695 ERROR: Exception on / [GET] [in /Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/seleenadesai/Documents/Python/microblog/app/routes.py", line 31, in index
+    page, app.config['POSTS_PER_PAGE'], False)
+KeyError: 'POSTS_PER_PAGE'
+2021-11-28 10:18:08,160 ERROR: Exception on / [GET] [in /Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/seleenadesai/Documents/Python/microblog/app/routes.py", line 31, in index
+    page, app.config['POSTS_PER_PAGE'], False)
+KeyError: 'POSTS_PER_PAGE'
+2021-11-28 10:18:13,179 ERROR: Exception on /index [GET] [in /Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/seleenadesai/Documents/Python/microblog/app/routes.py", line 31, in index
+    page, app.config['POSTS_PER_PAGE'], False)
+KeyError: 'POSTS_PER_PAGE'
+2021-11-28 10:18:14,494 ERROR: Exception on /index [GET] [in /Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/seleenadesai/Documents/Python/microblog/app/routes.py", line 31, in index
+    page, app.config['POSTS_PER_PAGE'], False)
+KeyError: 'POSTS_PER_PAGE'
+2021-11-28 10:18:15,331 ERROR: Exception on /user/susan [GET] [in /Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/seleenadesai/Documents/Python/microblog/app/routes.py", line 100, in user
+    page, app.config['POSTS_PER_PAGE'], False)
+KeyError: 'POSTS_PER_PAGE'
+2021-11-28 10:18:16,676 ERROR: Exception on /explore [GET] [in /Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/seleenadesai/Documents/Python/microblog/app/routes.py", line 46, in explore
+    page, app.config['POSTS_PER_PAGE'], False)
+KeyError: 'POSTS_PER_PAGE'
+2021-11-28 10:18:18,767 ERROR: Exception on /index [GET] [in /Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/seleenadesai/Documents/Python/microblog/venv/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/seleenadesai/Documents/Python/microblog/app/routes.py", line 31, in index
+    page, app.config['POSTS_PER_PAGE'], False)
+KeyError: 'POSTS_PER_PAGE'
+2021-11-28 10:23:55,179 INFO: Microblog startup [in /Users/seleenadesai/Documents/Python/microblog/app/__init__.py:43]
+2021-11-30 12:22:16,575 INFO: Microblog startup [in /Users/seleenadesai/Documents/Python/microblog/app/__init__.py:45]
+2021-11-30 12:31:36,351 INFO: Microblog startup [in /Users/seleenadesai/Documents/Python/microblog/app/__init__.py:45]
+2021-11-30 12:36:46,870 INFO: Microblog startup [in /Users/seleenadesai/Documents/Python/microblog/app/__init__.py:45]
